@@ -1,6 +1,5 @@
 package com.xworkz.copy.boot;
 
-import java.lang.reflect.InaccessibleObjectException;
 
 import com.xworkz.copy.things.Amazon;
 import com.xworkz.copy.things.FaceBook;

@@ -20,6 +20,8 @@ public class Tea {
 	public int netWeight;
 	public boolean healthy;
 
-	
+	public Tea() {
+		
+	}
 }
 

@@ -51,6 +51,7 @@ public static void main(String[] args) {
 	tea=coffee;
 	
 	coffee.product="Coffee";
+	
 	System.out.println(coffee.product);
 	System.out.println(coffee.brand);
 	System.out.println(coffee.place);
