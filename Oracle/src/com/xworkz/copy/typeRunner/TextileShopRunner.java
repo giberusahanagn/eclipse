@@ -18,6 +18,9 @@ public class TextileShopRunner {
 	System.out.println("-------------------");
 	TextileShop textileShop4 = new TextileShop(9972451281l);
 	
+	System.out.println("-------------------");
+	TextileShop textileShop5 = new TextileShop(30,"Bharath",9481038849l);
+	
 	
 	
 	}

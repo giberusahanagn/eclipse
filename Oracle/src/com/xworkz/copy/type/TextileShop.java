@@ -51,30 +51,15 @@ public TextileShop( int shopNo,String ownerName,long contactNo) {
 	System.out.println("contact No:"+contactNo);
 }
 public TextileShop(int ownerNoOfWifes,long ownerDaughterNumber,String ownerDaughterName ) {
-	
-	this();this.shopNo=shopNo=9;
+
+	this.shopNo=shopNo=9;
 	this.ownerNoOfWifes=ownerNoOfWifes;
 	this.ownerDaughterName=ownerDaughterName;
-	
 	
 	System.out.println("shopNo:"+shopNo);
 	System.out.println("owner No Of Wifes:"+ownerNoOfWifes);
 	System.out.println("owner Daughter Number:"+ownerDaughterNumber);
 	System.out.println("owner Daughter Name:"+ownerDaughterName);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
