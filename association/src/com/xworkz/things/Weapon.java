@@ -7,14 +7,14 @@ public class Weapon {
 	public String use;
 	public int weight;
 
-
-	public Weapon(String name,int weight) {
+	public Weapon(String name, int weight) {
 		super();
 		this.name = name;
 		this.use = use;
 		this.weight = weight;
 
 	}
+
 	public void showOff() {
 		System.out.println("Weapon name:" + name);
 		System.out.println("use: " + use);
