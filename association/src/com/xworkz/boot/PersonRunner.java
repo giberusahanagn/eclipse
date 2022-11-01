@@ -14,23 +14,20 @@ public class PersonRunner {
 	public static void main(String[] args) {
 
 		Country country = new Country();
-		country.setValues("India", "Dehli", "Droupdi", 4567898d);
-		country.showOff();
-		System.out.println(System.lineSeparator());
+		country.setValues("India", "Dehli", "Droupdi murmu", 4567898d);
+		
 
 		State state = new State();
 		state.setValues("Karnataka", "Bangalore", "Bommai", 456789d);
-		state.showOff();
 		
-		System.out.println(System.lineSeparator());
 		City city = new City();
 		city.setValues("Karnataka", "kempeGowda","IT", 4356776d);
-		city.showOff();
+	
 		
-		System.out.println(System.lineSeparator());
+		
 		Location location = new Location();
 		location.setLocation(10, "rajajinagar");
-		location.showOff();
+		location.showOff(city,state,country);
 
 		
 		Address address = new Address();
@@ -49,17 +46,17 @@ public class PersonRunner {
 		
 		System.out.println(System.lineSeparator());
 		Email email = new Email();
-		email.setvalues("Sahana",10,"Sahana@123", 9008284717l, company);
+		email.setvalues("Sahana","sahanagn.xworkz@gmail.com","Sahana@123", 9008284717l, company);
 		email.showOff();
 		
 		System.out.println(System.lineSeparator());
 		Email email2=new Email();
-		email2.setvalues("Manjula",11,"Manjula@123", 9972451281l, company);
+		email2.setvalues("Manjula","majulac@gmail.com","Manjula@123", 9972451281l, company);
 		email2.showOff();
 		
 		System.out.println(System.lineSeparator());
 		Email email3=new Email();
-		email3.setvalues("Bharath",12, "Bharath@123", 8722159292l, company);
+		email3.setvalues("Bharath","bharathgn@gmail.com", "Bharath@123", 8722159292l, company);
 		email3.showOff();
 		System.out.println(System.lineSeparator());
 		Email[] emails= {email,email2,email3};

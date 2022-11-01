@@ -21,7 +21,7 @@ public class Job {
 		System.out.println("salary in job class: " +salary);
 		System.out.println("Bond in job class: " +bond);
 		System.out.println("Role in job class: " +role);
-	
+		company.showOff();
 	}
 	
 

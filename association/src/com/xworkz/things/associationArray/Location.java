@@ -18,9 +18,14 @@ public class Location {
 		this.country = country;
 	}
 
-	public void showOff() {
+	public void showOff(City city,State state,Country country) {
 		System.out.println("No of the locations in location class: " +no);
 		System.out.println("Street name of the location in Location class:"+street);
 		
+		city.showOff();
+		System.out.println(System.lineSeparator());
+		state.showOff();
+		System.out.println(System.lineSeparator());
+		country.showOff();
 	}
 }
