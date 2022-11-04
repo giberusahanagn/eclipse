@@ -26,7 +26,7 @@ public class PersonRunner {
 		
 		
 		Location location = new Location();
-		location.setLocation(10, "rajajinagar");
+		location.setLocation(1, "rajajinagar");
 		location.showOff(city,state,country);
 
 		
@@ -47,17 +47,16 @@ public class PersonRunner {
 		System.out.println(System.lineSeparator());
 		Email email = new Email();
 		email.setvalues("Sahana","sahanagn.xworkz@gmail.com","Sahana@123", 9008284717l, company);
-		email.showOff();
-		
-		System.out.println(System.lineSeparator());
+	
+	
 		Email email2=new Email();
 		email2.setvalues("Manjula","majulac@gmail.com","Manjula@123", 9972451281l, company);
-		email2.showOff();
+	
 		
-		System.out.println(System.lineSeparator());
+
 		Email email3=new Email();
 		email3.setvalues("Bharath","bharathgn@gmail.com", "Bharath@123", 8722159292l, company);
-		email3.showOff();
+	
 		System.out.println(System.lineSeparator());
 		Email[] emails= {email,email2,email3};
 		
@@ -65,7 +64,7 @@ public class PersonRunner {
 		person.setEmail("Sahana",emails,job);
 	
 		
-		
+		person.showOff();
 
 	}
 }

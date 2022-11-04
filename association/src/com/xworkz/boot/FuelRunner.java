@@ -1,11 +1,11 @@
 package com.xworkz.boot;
 
-import com.xworkz.things.Fuel;
+import com.xworkz.things.Brand;
 
 public class FuelRunner {
 
 	public static void main(String[] args) {
-		Fuel fuel = new Fuel();
+		Brand fuel = new Brand();
 		fuel.showOff();
 	}
 
