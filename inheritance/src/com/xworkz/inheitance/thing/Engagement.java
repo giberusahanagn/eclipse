@@ -1,9 +1,9 @@
 package com.xworkz.inheitance.thing;
 
 import com.xworkz.inheitance.constants.RingType;
-
 public class Engagement extends Marraige {
 
+	static String staticVariable;
 	public String className;
 	public RingType ringType=RingType.GOLD;
 	public Engagement(int noOfPeople, String place) {
@@ -21,9 +21,9 @@ public class Engagement extends Marraige {
 		System.out.println(ringType);
 	
 	}
-	public Engagement(String name) {
-		super(name);
-	System.out.println("static variable constructor");
+	public Engagement(String staticVariable) {
+		super(staticVariable);
+	System.out.println("static variable constructor : " +staticVariable);
 	}
 	
 }

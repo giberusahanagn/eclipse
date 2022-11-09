@@ -28,6 +28,6 @@ public class MarriageRunner {
 		
 		Marraige marraige6=new Marraige(null, 0, null, "unknown");
 		
-		Marraige marraige7=new Engagement("yrfge");
+		Marraige marraige7=new Engagement("staticVariable");
 	}
 }

@@ -1,7 +1,8 @@
 package com.xworkz.inheitance.thing;
 
 public class Marraige {
-	 static String name;
+	
+	 static String staticVariable;
 	public String className;
 	public int noOfPeople;
 	public String place;
@@ -11,19 +12,19 @@ public class Marraige {
 		System.out.println(noOfPeople);
 		System.out.println(place);	
 	}
-	public Marraige(String className, int noOfPeople, String place,String name) {
+	public Marraige(String className, int noOfPeople, String place,String staticVariable) {
 		this();
 		this.className = className;
 		this.noOfPeople = noOfPeople;
 		this.place = place;
-		this.name=name;
-		System.out.println("printing static name: "+name);
+		this.staticVariable=staticVariable;
+		System.out.println("printing static name: "+staticVariable);
 	}
 	
-    public Marraige(String name) {
-    	this.name=name;
+    public Marraige(String staticVariable) {
+    	this.staticVariable=staticVariable;
     	
-    	System.out.println("Printing static variable :"+name);
+    	System.out.println("Printing static variable :"+staticVariable);
       }
 	
 }
