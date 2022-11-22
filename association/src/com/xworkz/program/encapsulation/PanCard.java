@@ -42,4 +42,5 @@ public class PanCard {
 	public void setdOB(String dOB) {
 		this.dOB = dOB;
 	}
+	
 }

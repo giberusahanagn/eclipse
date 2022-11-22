@@ -11,6 +11,7 @@ public class Marraige {
 		System.out.println(className);
 		System.out.println(noOfPeople);
 		System.out.println(place);	
+		
 	}
 	public Marraige(String className, int noOfPeople, String place,String staticVariable) {
 		this();

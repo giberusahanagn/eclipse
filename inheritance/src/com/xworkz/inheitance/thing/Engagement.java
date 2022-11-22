@@ -19,6 +19,7 @@ public class Engagement extends Marraige {
 		this.ringType=ringType;
 		System.out.println(className);
 		System.out.println(ringType);
+		
 	
 	}
 	public Engagement(String staticVariable) {

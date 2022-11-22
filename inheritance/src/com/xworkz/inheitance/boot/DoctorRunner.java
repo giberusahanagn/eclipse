@@ -15,7 +15,9 @@ public class DoctorRunner {
 		System.out.println(System.lineSeparator());
 
 		Doctor doctor1 = new Dentist();
-		Doctor doctor2 = (Doctor) doctor1;
+		Dentist doctor2 = (Dentist) doctor1;
+		System.out.println(doctor1.doctorAge);
+		System.out.println(doctor2.dent_Fees);
 
 		System.out.println(System.lineSeparator());
 
