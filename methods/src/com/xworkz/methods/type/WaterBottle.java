@@ -49,16 +49,16 @@ public class WaterBottle {
 
 		if (obj instanceof WaterBottle) {
 			WaterBottle casted = (WaterBottle) obj;
-			if (this.brand.equals(casted.brand) && this.price.equals(casted.price) && this.quantity.equals(casted.quantity) ) {
-
+			if (this.brand.equals(casted.brand) && this.price.equals(casted.price)
+					&& this.quantity.equals(casted.quantity)) {
+				System.out.println("Bottle class");
 				System.out.println("brand ,price,quantity is same");
 				System.out.println("3 properties");
 				return true;
 			} else {
 				System.err.println("brand not same");
 			}
-		
-			
+
 		}
 
 		return false;

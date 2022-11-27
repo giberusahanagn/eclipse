@@ -97,21 +97,20 @@ public class Paint {
 //		this.quality = quality;
 //	}
 
-
 	public Paint(String name, String brand, String price, String manfDate, String exprDate, String color, String qrCode,
-		String netWeight, String quantity, String quality) {
-	super();
-	this.name = name;
-	this.brand = brand;
-	this.price = price;
-	this.manfDate = manfDate;
-	this.exprDate = exprDate;
-	this.color = color;
-	this.QrCode = qrCode;
-	this.netWeight = netWeight;
-	this.quantity = quantity;
-	this.quality = quality;
-}
+			String netWeight, String quantity, String quality) {
+		super();
+		this.name = name;
+		this.brand = brand;
+		this.price = price;
+		this.manfDate = manfDate;
+		this.exprDate = exprDate;
+		this.color = color;
+		this.QrCode = qrCode;
+		this.netWeight = netWeight;
+		this.quantity = quantity;
+		this.quality = quality;
+	}
 
 	@Override
 	public String toString() {
@@ -126,14 +125,15 @@ public class Paint {
 
 		if (obj instanceof Paint) {
 			Paint casted = (Paint) obj;
-			if (this.name.equals(casted.name)&&this.brand.equals(casted.brand) && 
-					this.price.equals(casted.price) &&this.manfDate.equals(casted.manfDate)&&this.exprDate.equals(casted.exprDate)
-					&&this.color.equals(casted.color) &&this.QrCode.equals(casted.QrCode)&&this.netWeight.equals(casted.netWeight)
-					&&this.quality.equals(casted.quality)&&this.quantity.equals(casted.quantity)) {
-				System.out.println("10 properties are matched");	
-				
+			if (this.name.equals(casted.name) && this.brand.equals(casted.brand) && this.price.equals(casted.price)
+					&& this.manfDate.equals(casted.manfDate) && this.exprDate.equals(casted.exprDate)
+					&& this.color.equals(casted.color) && this.QrCode.equals(casted.QrCode)
+					&& this.netWeight.equals(casted.netWeight) && this.quality.equals(casted.quality)
+					&& this.quantity.equals(casted.quantity)) {
+				System.out.println("10 properties are matched");
+
 				return true;
-					
+
 			} else {
 				System.err.println("not same");
 			}

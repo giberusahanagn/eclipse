@@ -12,6 +12,7 @@ public class Currency {
 	private String japan;
 	private String srilanka;
 	private String nepal;
+
 	public Currency(String india, String austria, String argentina, String armenia) {
 		super();
 		this.india = india;
@@ -19,22 +20,19 @@ public class Currency {
 		this.argentina = argentina;
 		this.armenia = armenia;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
-	if(obj instanceof Currency) {
-		Currency casted=(Currency)obj;
-		if(this.india.equals(casted.india)
-				&& this.austria.equals(casted.austria)&& this.argentina.equals(casted.argentina)
-				&& this.armenia.equals(casted.armenia))
-		{
-			System.out.println(" 4 properties matched");
-			return true;
+		if (obj instanceof Currency) {
+			Currency casted = (Currency) obj;
+			if (this.india.equals(casted.india) && this.austria.equals(casted.austria)
+					&& this.argentina.equals(casted.argentina) && this.armenia.equals(casted.armenia)) {
+				System.out.println(" 4 properties matched");
+				return true;
+			} else {
+				System.err.println("not matched");
+			}
 		}
-		else {
-			System.err.println("not matched");
-		}
-	}
 		return false;
 	}
 }
