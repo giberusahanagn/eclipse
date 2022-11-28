@@ -56,7 +56,7 @@ public class Movie {
 			}
 		}
 		System.out.println("no of digits :" + digits);
-		System.out.println(System.lineSeparator());
+	
 
 	}
 }

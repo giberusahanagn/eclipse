@@ -3,7 +3,7 @@ package com.xworkz.methods.type.stringMethods;
 public class Palindrome {
 	public static void main(String[] args) {
 		String word = "anna anna amma ";
-		char[] ch = word.toCharArray();
+		//char[] ch = word.toCharArray();
 		String[] split = word.split(" ");
 		System.out.println(split.length);
 		int j;

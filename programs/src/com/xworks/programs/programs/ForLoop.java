@@ -1,4 +1,4 @@
-//package com.xworks.programs.programs;
+package com.xworks.programs.programs;
 //
 //public class ForLoop {
 //	public static void main(String[] args) {
