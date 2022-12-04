@@ -1,8 +1,11 @@
 package com.xworkz.interfaceProgram.rule;
 
+import com.xworkz.interfaceProgram.follower.HospitalRule;
 import com.xworkz.interfaceProgram.ruler.Hospital;
 
 public class Doctor implements Hospital {
+
+	
 
 	@Override
 	public double noOfStaffs() {
