@@ -25,17 +25,5 @@ public class PizzaRunner {
 		dto.setUpdatedDate(LocalDateTime.now());
 		pizzaService.saveAndValidate(dto);
 
-		PizzaDTO dto1 = new PizzaDTO();
-		dto1.setPizzaName("Cheese Burst");
-		dto1.setPrice(200);
-		dto1.setCompany("Dominous");
-		dto1.setSize(PizzaSize.MEDIUM);
-		dto1.setFalvor("Pepperoni");
-		dto1.setType("Veg");
-		dto1.setCreatedBy("System");
-		dto1.setCreatedDate(LocalDateTime.now());
-		dto1.setUpdatedBy("Sahana");
-		dto1.setUpdatedDate(LocalDateTime.now());
-		pizzaService.saveAndValidate(dto1);
 	}
 }

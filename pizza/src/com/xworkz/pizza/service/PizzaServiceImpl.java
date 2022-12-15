@@ -66,7 +66,7 @@ public class PizzaServiceImpl implements PizzaService {
 			System.out.println("running get Size");
 			System.out.println("Type name matched" + dto);
 			System.out.println(output1);
-			return true;
+			
 		} else if (dto != null && dto.getType() == "NonVeg") {
 			System.out.println("running get Pizza Size");
 			System.out.println("Type name matched" + dto);
@@ -74,7 +74,12 @@ public class PizzaServiceImpl implements PizzaService {
 		} else {
 			System.err.println("Type not matched..");
 		}
-System.err.println("not matedcd");
+
+		if (output1 && output2) {
+			System.out.println(" checking condition output1 && output2 -->mathed");
+			return true;
+		}
+		System.err.println("not matedcd");
 		return false;
 	}
 
