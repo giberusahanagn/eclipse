@@ -66,7 +66,7 @@ public class PizzaServiceImpl implements PizzaService {
 			System.out.println("running get Size");
 			System.out.println("Type name matched" + dto);
 			System.out.println(output1);
-			
+
 		} else if (dto != null && dto.getType() == "NonVeg") {
 			System.out.println("running get Pizza Size");
 			System.out.println("Type name matched" + dto);

@@ -8,6 +8,8 @@ public interface WarRepository {
 
 	boolean create(WarDTO dto);
 
+	boolean create(WarDTO[] array);
+
 	int total();
 
 	WarDTO findByStartBy(String startedBy);
@@ -18,5 +20,5 @@ public interface WarRepository {
 
 	WarDTO findByStartDateLesserThanOREqualTo(LocalDateTime date);
 
-	WarDTO findByStartDateAndEndDate(double startDate,double endDate);
+	WarDTO findByStartDateAndEndDate(double startDate, double endDate);
 }

@@ -29,13 +29,30 @@ public class WarRepositoryImpi implements WarRepository {
 	}
 
 	@Override
+	public boolean create(WarDTO[] array) {
+		System.out.println("running War Array.......");
+		this.warDto = array;
+		if (warDto != null) {
+			for (WarDTO dto : array) {
+				System.out.println("entered loop ");
+				WarDTO[] dto2 = warDto;
+				System.out.println(dto);
+			}
+		} else {
+			System.err.println("No list WAR");
+		}
+
+		return false;
+	}
+
+	@Override
 	public WarDTO findByStartBy(String startedBy) {
 		System.out.println("running findBy StartBy");
 		for (WarDTO dto : warDto) {
 
 			if (dto != null && dto.getStartBy().equals(startedBy)) {
 				System.out.println(" name matched...");
-				System.out.println("war started by :" + startedBy + " AND the details of the war is: " + dto);
+				System.out.println("war started by :" + startedBy + " AND the details " + "of the war is: " + dto);
 				return dto;
 			}
 			index++;
@@ -105,10 +122,8 @@ public class WarRepositoryImpi implements WarRepository {
 	public WarDTO findByStartDateAndEndDate(double startDate, double endDate) {
 		System.out.println("Running findByStartDateAndEndDate.....");
 		for (WarDTO dto : warDto) {
-
 			if (dto != null) {
 				if (dto.getStartedDate() == startDate && dto.getEndDate() == endDate) {
-
 					System.out.println("found year for findByStartDateAndEndDate   -->" + startDate + endDate + dto);
 					return dto;
 				} else {

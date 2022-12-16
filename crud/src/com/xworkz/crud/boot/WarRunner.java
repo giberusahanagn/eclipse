@@ -1,15 +1,12 @@
 package com.xworkz.crud.boot;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-
 import com.xworkz.crud.dto.WarDTO;
 import com.xworkz.crud.repositories.WarRepository;
 import com.xworkz.crud.repositories.WarRepositoryImpi;
 
 public class WarRunner {
 	public static void main(String[] args) {
-
 		WarRepository repository = new WarRepositoryImpi();
 
 		WarDTO dto = new WarDTO();
@@ -61,6 +58,10 @@ public class WarRunner {
 		System.out.println("total index :" + index);
 
 		System.out.println("----------------------");
+		WarDTO[] dtos = { dto, dto1, dto2 };
+		repository.create(dtos);
+
+		System.out.println("---------------------------");
 		repository.findByStartBy("Russia");
 		System.out.println("==========================");
 
