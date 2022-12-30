@@ -16,7 +16,7 @@ public class HelmetRunner {
 		HelmetDTO dto = new HelmetDTO("Vega", HelmetType.FULL, HelmetColor.BLACK, 750D);
 		dto.setCreatedBy("System");
 		dto.setCreatedDate(LocalDateTime.MAX);
-		dto.setUpdatedBy("Sahana");
+		dto.setUpdatedBy("Sahana GN");
 		dto.setUpdatedDate(LocalDateTime.now());
 		
 		HelmetDTO dto1 = new HelmetDTO("Va", HelmetType.FULL, HelmetColor.BLACK, 750D);
