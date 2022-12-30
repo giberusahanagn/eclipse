@@ -1,5 +1,7 @@
 package com.xworkz.pizza.service;
 
+import com.xworkz.pizza.dto.*;
+import com.xworkz.pizza.exception.*;
 import com.xworkz.pizza.constant.HelmetColor;
 import com.xworkz.pizza.constant.HelmetType;
 import com.xworkz.pizza.dto.HelmetDTO;
@@ -20,6 +22,7 @@ public class HelmetServiceImpl implements HelmetService {
 
 	@Override
 	public boolean ValidateAndSave(HelmetDTO dto) {
+		System.out.println("running  ValidateAndSave :" + dto);
 		HelmetType type = dto.getType();// not null,
 		HelmetColor color = dto.getColor();// not null
 		String brand = dto.getBrand();// not null >4,<20
@@ -52,9 +55,26 @@ public class HelmetServiceImpl implements HelmetService {
 		if (validBrand && validColor && validPrice && validPrice) {
 			boolean saved = this.helmetRepository.save(dto);
 			System.out.println(saved);
-			return true;
+
 		}
+
 		return false;
 	}
+//	@Override
+//	public boolean array(HelmetDTO[] array) {
+//		System.out.println("running War Array.......");
+//		this.warDto = array;
+//		if (warDto != null) {
+//			for (WarDTO dto : array) {
+//				System.out.println("entered loop ");
+//				WarDTO[] dto2 = warDto;
+//				System.out.println(dto);
+//			}
+//		} else {
+//			System.err.println("No list WAR");
+//		}
+//
+//		return false;
+//	}
 
 }

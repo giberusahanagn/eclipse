@@ -21,6 +21,8 @@ public class SanitizerRunner {
 		SanitizierDTO dto9 = new SanitizierDTO(9, "try-active", 40, "Red");
 		SanitizierDTO dto10 = new SanitizierDTO(10, "Dalmia", 0, "lightBlue");
 
+		SanitizierDTO dto11 = new SanitizierDTO(10, "Dalmia", 0, "lightBlue");
+
 		Collection<SanitizierDTO> collection = new ArrayList<SanitizierDTO>();
 		collection.add(dto1);
 		collection.add(dto2);

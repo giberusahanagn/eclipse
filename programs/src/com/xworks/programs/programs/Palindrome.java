@@ -3,7 +3,7 @@ package com.xworks.programs.programs;
 public class Palindrome {
 	public static void main(String[] args) {
 
-		String name = "madam";
+		String name = "ghhg";
 		int count = 0;
 		int index = 0;
 
@@ -16,9 +16,9 @@ public class Palindrome {
 			}
 		}
 		if (count == 0) {
-			System.out.println("palindrom");
+			System.out.println("palindrom :"+name);
 		} else {
-			System.err.println("not a palindroem");
+			System.err.println("not a palindroem :"+name);
 		}
 
 		int number = 1821;
@@ -34,9 +34,9 @@ public class Palindrome {
 
 		}
 		if (number == rev) {
-			System.out.println("palindrome");
+			System.out.println("palindrome " +number);
 		} else {
-			System.err.println("not palindrome");
+			System.err.println("not palindrome "+number );
 		}
 
 	}

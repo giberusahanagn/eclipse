@@ -4,4 +4,5 @@ import com.xworkz.pizza.dto.HelmetDTO;
 
 public interface HelmetService {
 	boolean ValidateAndSave(HelmetDTO dto);
+	//boolean create(HelmetDTO[] dto);
 }
