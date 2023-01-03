@@ -17,6 +17,8 @@ public class PlaceRunner {
 		collection.add(dto1);
 		collection.add(dto2);
 		collection.add(dto3);
+		
+		
 		collection.add(dto4);
 		
 		boolean contains=collection.contains(dto5);

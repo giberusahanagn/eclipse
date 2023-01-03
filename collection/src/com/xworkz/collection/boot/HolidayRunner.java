@@ -3,7 +3,6 @@ package com.xworkz.collection.boot;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
 import com.xworkz.collection.dto.HolidayDTO;
 
 public class HolidayRunner {
